@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .user-item{
+            color:green;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>ID</p>
+        <input id="id" type="text" >
+        <p>Name</p>
+        <input id= "name" type="text">
+        <p>Gender</p>
+        <Select id="gender">
+            <!-- <option value=""></option> -->
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </Select>
+        <p></p>
+        <input type="button" onclick="submitForm()" value="add">
+    </form>
+    <ul id="userList"></ul>
+    <script>
+         var userData = [];
+
+function submitForm() {
+    var id = document.getElementById("id").value;
+    var name = document.getElementById("name").value;
+    var gender = document.getElementById("gender").value;
+    var userObject = {
+        id: id,
+        name: name,
+        gender:gender
+    };
+
+    userData.push(userObject);
+    console.log(userData);
+    UserList();
+
+}
+function UserList() {
+            var userListElement = document.getElementById("userList");
+            userListElement.innerHTML = ""; 
+
+            for (var i = 0; i < userData.length; i++) {
+                var listItem = document.createElement('li');
+                listItem.classList.add("user-item");
+                listItem.innerHTML =  + userData[i].id + '-' + userData[i].name + '-' + (userData[i].gender == 1 ? 'male' : 'female');
+                userListElement.appendChild(listItem);
+            }
+        }
+</script>
+</body>
+</html>

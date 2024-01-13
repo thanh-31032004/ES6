@@ -1,0 +1,40 @@
+<script>
+let classRoom = [
+"nguyễn tiến duẩn",
+"Hoàng Xuân Hiếu",
+"Hồ Sỹ Hưng",
+"Nguyễn Đức Thuận",
+"đoàn Minh Tùng",
+"Hồ Sỹ Hùng",
+"Lê Trung Hiếu",
+"đoàn vua dep trai vua hoc gioi Hữu Quý"];
+// Tách họ và tên
+function splitName(fullName) {
+    let parts = fullName.split(' ');
+    let lastName = parts[0];
+    let firstName = parts.slice(1).join(' ');
+    return {
+        lastName: lastName,
+        firstName: firstName
+    };
+}
+let separatedNames = classRoom.map(splitName);
+console.log(separatedNames);
+
+//Thêm một học sinh vào mảng
+function addName(index, fullName) {
+    let newname = splitName(fullName);
+    classRoom.splice(index, 0, fullName);
+}
+addName(3, "Nguyễn Văn Thành");
+
+//Xóa một sinh viên khỏi mảng
+function removeStudent(studentName) {
+    let student = classRoom.indexOf(studentName);
+    if (student !== -1) {
+        classRoom.splice(student, 1);
+    }
+}
+removeStudent("đoàn Minh Tùng");
+
+</script>
