@@ -1,0 +1,10 @@
+{
+    "comilerOptions":{
+        "module": "commonjs",
+        "target": "es6",
+        "baseUrl": "./src",
+        "paths":{
+            
+        }
+    }
+}
