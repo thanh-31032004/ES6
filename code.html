@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #content {
+            display: none;
+        }
+    </style>
+    <title>Show More Content</title>
+</head>
+<body>
+<p>Tôi là thành 20 tuổi sinh ra và lớn lên ở hà nội</p>
+<div id="content">
+    <p>This is the hidden content. You can show more details here.</p>
+
+</div>
+
+<button id="show-more-btn" onclick="toggleContent()">Xem thêm</button>
+
+<script>
+    function toggleContent() {
+        var contentDiv = document.getElementById('content');
+        var buttonText = document.getElementById('show-more-btn');
+
+        if (contentDiv.style.display === 'none') {
+            contentDiv.style.display = 'block';
+            buttonText.textContent = 'Ẩn đi';
+        } else {
+            contentDiv.style.display = 'none';
+            buttonText.textContent = 'Xem thêm';
+        }
+    }
+</script>
+
+</body>
+</html>

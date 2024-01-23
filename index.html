@@ -1,13 +1,189 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link href="./src/style.css" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+   <!-- <div>
+    <section class="float-left w-80 h-96 ">
+      <aside class="m-r float-right mr-8">
+        <h1 class="font-sans uppercase">Danh Mục Sản Phẩm</h1>
+        <ul>
+          <li><a href="http://">English Books</a></li>
+          <li><a href="http://">Sách tiếng Việt</a></li>
+          <li><a href="">Văn phòng phẩm</a></li>
+          <li><a href="">Quà lưu niệm</a></li>
+        </ul>
+      </aside>
+    </section>
+    <section>
+      <article>
+        <h1 class="uppercase font-sans">Nhà Sách Tiki</h1>
+        <img src="./public/Rectangle.jpg" alt="" style="width: 857px; height: 285px;">
+        <ul class="flex justify-between w-4/12 mt-4">
+          <li class="w-24 text-center h-11"><a href="http://">Phổ biến</a></li>
+          <li class="w-24 text-center h-11"><a href="http://">Bán chạy</a></li>
+          <li class="w-24 text-center h-11"><a href="http://">Hàng mới</a></li>
+          <li class="w-24 text-center h-11"><a href="http://">Giá thấp</a></li>
+          <li class="w-24 text-center h-11"><a href="http://">Giá cao</a></li>
+        </ul>
+      </article>
+        <div class="">
+          <div class="inline-block leading-7">
+            <img src="./public/Rectangle10.png" alt="">
+            <h3>Càng Kỷ Luật, Càng Tự Do</h3>
+            <div>
+              <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+            </div>
+            <p class="text-red-500">83.300 ₫</p>
+          </div>
+        
+        </div>
+    </section>
+  </div>  -->
+
+  <!-- <div class="mr-52 ml-52">
+    <div cl>
+      <section class="flex">
+        <div id="product-container" class="inline-block w-1/3">
+          <img id="product-image" class="w-96" src="./public/Frame6.png" alt="Product Image">
+          <div id="thumbnail-container" class="grid grid-cols-5 w-72 mt-3">
+            <img class="w-16" src="./public/Frame9.png" alt="Thumbnail 1" onclick="changeImage('./public/Frame9.png')">
+            <img class="w-16" src="./public/Frame8.png" alt="Thumbnail 2" onclick="changeImage('./public/Frame8.png')">
+            <img class="w-16" src="./public/Frame7.png" alt="Thumbnail 3" onclick="changeImage('./public/Frame7.png')">
+            <img class="w-16" src="./public/Frame7.png" alt="Thumbnail 3" onclick="changeImage('./public/Frame7.png')">
+            <img class="w-16" src="./public/Frame7.png" alt="Thumbnail 3" onclick="changeImage('./public/Frame7.png')">
+          </div>
+        </div>
+        <div class="ml-36">
+          <form action="" class="leading-10">
+            <h2 class="font-semibold text-2xl">Càng Kỷ Luật, Càng Tự Do</h2>
+            <div><img src="./public/Group 3.png" alt="" class="inline"><a href="http://">(Xem 2942 đánh giá)</a>|Đã bán
+              1000+</div>
+            <div class="bg-[#FAFAFA] h-24">
+              <h3 class="inline text-[#FF424E]">83.930 ₫</h3>
+              <h6 class="inline text-[#808089]">109.000 ₫</h6>
+            </div>
+            <h3>Số Lượng</h3>
+            <div id="quantity-container" class="flex items-center">
+              <button id="decrease-btn" onclick="decreaseQuantity()">-</button>
+              <input type="text" id="quantity" value="1" readonly class="w-8 text-center ml-2 mr-2">
+              <button id="increase-btn" onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="w-72 h-12 bg-[#FF424E] text-white rounded">Chọn mua</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <h1>Sản phẩm tương tự</h1>
+        <div class="grid grid-cols-6 gap-4">
+          <a href="/product" class="block">
+            <div class="">
+            <div class="inline-block leading-7">
+              <img src="./public/Rectangle10.png" alt="">
+              <h3>TƯ DUY NGƯỢC - Nguyễn Anh Dũng</h3>
+              <div>
+                <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+              </div>
+              <p class="text-[#FF424E]">100100</p>
+            </div>
+          
+          </div>
+            </a>
+            <a href="/product" class="block">
+              <div class="">
+              <div class="inline-block leading-7">
+                <img src="./public/Rectangle10.png" alt="">
+                <h3>TƯ DUY NGƯỢC - Nguyễn Anh Dũng</h3>
+                <div>
+                  <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+                </div>
+                <p class="text-[#FF424E]">100100</p>
+              </div>
+            
+            </div>
+              </a>
+              <a href="/product" class="block">
+                <div class="">
+                <div class="inline-block leading-7">
+                  <img src="./public/Rectangle10.png" alt="">
+                  <h3>TƯ DUY NGƯỢC - Nguyễn Anh Dũng</h3>
+                  <div>
+                    <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+                  </div>
+                  <p class="text-[#FF424E]">100100</p>
+                </div>
+              
+              </div>
+                </a>
+                <a href="/product" class="block">
+                  <div class="">
+                  <div class="inline-block leading-7">
+                    <img src="./public/Rectangle10.png" alt="">
+                    <h3>TƯ DUY NGƯỢC - Nguyễn Anh Dũng</h3>
+                    <div>
+                      <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+                    </div>
+                    <p class="text-[#FF424E]">100100</p>
+                  </div>
+                
+                </div>
+                  </a>
+                  <a href="/product" class="block">
+                    <div class="">
+                    <div class="inline-block leading-7">
+                      <img src="./public/Rectangle10.png" alt="">
+                      <h3>TƯ DUY NGƯỢC - Nguyễn Anh Dũng</h3>
+                      <div>
+                        <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+                      </div>
+                      <p class="text-[#FF424E]">100100</p>
+                    </div>
+                  
+                  </div>
+                    </a>
+                    <a href="/product" class="block">
+                      <div class="">
+                      <div class="inline-block leading-7">
+                        <img src="./public/Rectangle10.png" alt="">
+                        <h3>TƯ DUY NGƯỢC - Nguyễn Anh Dũng</h3>
+                        <div>
+                          <p class="font-thin"><img src="./public/Group 3.png" alt="" class="inline-block">| Đã bán 1000+</p>
+                        </div>
+                        <p class="text-[#FF424E]">100100</p>
+                      </div>
+                    
+                    </div>
+                      </a>
+        </div>
+      </section>
+      <section>
+        <div>
+        <h3 class="mb-3">Mô tả sản phẩm</h3>
+        <p class="mb-3">KỶ LUẬT vốn là ván cờ bạn phải tự đấu với chính mình. Thắng - bạn sẽ có được “bản năng của người mạnh mẽ nhất”, đó là sự tự kiểm soát bản thân. Thua - bạn mãi sống trong cảm giác tạm bợ, nuối tiếc. Càng dễ dàng dung túng cho những thói quen trì hoãn bao nhiêu, cuộc sống của bạn sẽ đi càng nhanh tới sự mất kiểm soát và thiếu quy hoạch bấy nhiêu.</p>
+        <p class="mb-3">Hãy kiên trì đặt ra yêu cầu cao với bản thân, từ chối sự mê hoặc của thói tùy tiện đồng thời thiết lập cho mình những thói quen tốt trong hành vi thường ngày. Sự nỗ lực sẽ luôn được đền đáp xứng đáng nếu bạn biết cách đầu tư công sức và thời gian. Bởi một ngày nào đó trong tương lai, những gì bạn làm sẽ phản chiếu đầy đủ trên chính con người và cuộc đời của bạn.
+        </p>
+        <p class="mb-3">CÀNG KỶ LUẬT, CÀNG TỰ DO - Mong rằng tại thời điểm kết thúc hành trình với cuốn sách, bạn đã là một phiên bản khác kỷ luật hơn, nhưng tự do hơn.
+        </p>
+      </section>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="app"></div>
+  <script type="module" src="./src/main.js"></script>
+  <script>
+    function changeImage(newImageSrc) {
+      document.getElementById('product-image').src = newImageSrc;
+    }
+  </script>
+</body>
+
 </html>
